@@ -8,7 +8,7 @@
     <data>
         <variable
             name="puntos"
-            type="com.genesis.databindingteams.PuntosEquipo" />
+            type="com.genesis.databindingteams.PuntosEquipo"/>
     </data>
 
 <LinearLayout
@@ -46,7 +46,7 @@
                 android:layout_height="wrap_content"
                 android:layout_marginTop="@dimen/small_margin"
                 android:gravity="center"
-                android:text="@string/initial_valor"
+                android:text="@{puntos.puntosEquipoA}"
                 android:textSize="@dimen/big_text_size" />
 
 
@@ -94,7 +94,7 @@
                 android:layout_height="wrap_content"
                 android:layout_marginTop="@dimen/small_margin"
                 android:gravity="center"
-                android:text="@string/initial_valor"
+                android:text="@{puntos.puntosEquipoB}"
                 android:textSize="@dimen/big_text_size" />
 
             <Button
