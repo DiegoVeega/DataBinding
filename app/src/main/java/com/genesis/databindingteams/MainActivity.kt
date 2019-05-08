@@ -11,7 +11,7 @@ class MainActivity : AppCompatActivity() {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_main)
 
-        //ActivityBinding binding = DataBindingUtil.setContentView(this, R.layout.activity_main)
+        PuntosEquipo binding = DataBindingUtil.setContentView(this, R.layout.activity_main)
 
 
 
