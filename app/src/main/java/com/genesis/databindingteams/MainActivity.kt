@@ -3,7 +3,6 @@ package com.genesis.databindingteams
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import androidx.databinding.DataBindingUtil
-import kotlinx.android.synthetic.main.activity_main.*
 
 class MainActivity : AppCompatActivity() {
 
@@ -11,8 +10,8 @@ class MainActivity : AppCompatActivity() {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_main)
 
-        PuntosEquipo binding = DataBindingUtil.setContentView(this, R.layout.activity_main)
-
+        //https://medium.com/@jencisov/androids-data-binding-with-kotlin-df94a24ffc0f
+        val binding: ActivityMainBinding = DataBindingUtil.setContentView(this, R.layout.activity_main)
 
 
 

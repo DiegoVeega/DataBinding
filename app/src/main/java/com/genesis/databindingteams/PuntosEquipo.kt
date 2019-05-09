@@ -1,12 +1,18 @@
 package com.genesis.databindingteams
 
-class PuntosEquipo {
+data class PuntosEquipo(val puntosEquipoA:Int,val puntosEquipoB:Int)
 
-    var puntosEquipoA:Int? = 0
-    var puntosEquipoB:Int? = 0
+    /*
+    var puntosEquipoA:Int?
+    var puntosEquipoB:Int?
+
+    init{
+        puntosEquipoA = 0
+        puntosEquipoB = 0
+    }
 
     constructor(puntosEquipoA: Int?, puntosEquipoB: Int?) {
         this.puntosEquipoA = puntosEquipoA
         this.puntosEquipoB = puntosEquipoB
     }
-}
+*/
