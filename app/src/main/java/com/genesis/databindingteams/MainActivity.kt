@@ -3,18 +3,18 @@ package com.genesis.databindingteams
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import androidx.databinding.DataBindingUtil
+import com.genesis.databindingteams.databinding.MainActivityBinding
+
 
 class MainActivity : AppCompatActivity() {
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
-        setContentView(R.layout.activity_main)
+       // setContentView(R.layout.activity_main)
+        var binding: MainActivityBinding = DataBindingUtil.setContentView<MainActivityBinding>(this,R.layout.main_activity)
 
-        //https://medium.com/@jencisov/androids-data-binding-with-kotlin-df94a24ffc0f
-        val binding: ActivityMainBinding = DataBindingUtil.setContentView(this, R.layout.activity_main)
-
-
-
+        var Equipo = Equipos(0,0)
+        binding.puntos = Equipo
     }
 
     fun addOneA(){

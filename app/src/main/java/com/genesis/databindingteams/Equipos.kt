@@ -1,6 +1,6 @@
 package com.genesis.databindingteams
 
-data class PuntosEquipo(val puntosEquipoA:Int,val puntosEquipoB:Int)
+data class Equipos(val puntosEquipoA:Int, val puntosEquipoB:Int)
 
     /*
     var puntosEquipoA:Int?
