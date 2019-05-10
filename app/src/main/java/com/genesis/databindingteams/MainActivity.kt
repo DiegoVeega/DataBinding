@@ -21,10 +21,12 @@ class MainActivity : AppCompatActivity() {
 
         val binding = MainActivityBinding.inflate(layoutInflater)
 
+        /*
         puntuacion = ViewModelProviders.of(this).get(puntuacion::class.java)
         binding.btTeamA1.text = puntuacion.puntosEquipoA.toString()
         binding.btTeamA1.text = puntuacion.puntosEquipoB.toString()
         binding.puntos = puntuacion
+        */
     }
 
     fun addOneA(v: View){
