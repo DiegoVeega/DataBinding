@@ -54,6 +54,7 @@
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:layout_marginTop="@dimen/small_margin"
+                    android:onClick="addThreeA"
                     android:text="@string/_3_puntos" />
 
                 <Button
@@ -61,6 +62,7 @@
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:layout_marginTop="@dimen/small_margin"
+                    android:onClick="addTwoA"
                     android:text="@string/_2_puntos" />
 
                 <Button
@@ -68,6 +70,7 @@
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:layout_marginTop="@dimen/small_margin"
+                    android:onClick="addOneA"
                     android:text="@string/_1_punto" />
 
             </LinearLayout>
@@ -101,6 +104,7 @@
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:layout_marginTop="@dimen/small_margin"
+                    android:onClick="addOneB"
                     android:text="@string/_3_puntos" />
 
                 <Button
@@ -108,6 +112,7 @@
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:layout_marginTop="@dimen/small_margin"
+                    android:onClick="addTwoB"
                     android:text="@string/_2_puntos" />
 
                 <Button
@@ -115,6 +120,7 @@
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:layout_marginTop="@dimen/small_margin"
+                    android:onClick="addThreeB"
                     android:text="@string/_1_punto" />
 
             </LinearLayout>
@@ -128,8 +134,8 @@
             android:layout_gravity="center"
             android:layout_marginTop="@dimen/medium_margin"
             android:layout_marginBottom="@dimen/medium_margin"
+            android:onClick="reset"
             android:text="@string/reset_text" />
 
     </LinearLayout>
-    
 </layout>

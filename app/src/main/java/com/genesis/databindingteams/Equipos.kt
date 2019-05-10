@@ -1,18 +1,27 @@
 package com.genesis.databindingteams
 
-data class Equipos(val puntosEquipoA:Int, val puntosEquipoB:Int)
+import androidx.lifecycle.ViewModel
 
-    /*
-    var puntosEquipoA:Int?
-    var puntosEquipoB:Int?
+//data class Equipos(val puntosEquipoA:Int, val puntosEquipoB:Int)
+/*
+class Equipos {
 
-    init{
-        puntosEquipoA = 0
-        puntosEquipoB = 0
+    var puntosEquipoA: Int?
+    var puntosEquipoB: Int?
+
+    init {
+        puntosEquipoA = 0.toInt()
+        puntosEquipoB = 0.toInt()
     }
 
     constructor(puntosEquipoA: Int?, puntosEquipoB: Int?) {
         this.puntosEquipoA = puntosEquipoA
         this.puntosEquipoB = puntosEquipoB
     }
+}
 */
+
+class Equipos : ViewModel() {
+    var puntosEquipoA = 0
+    var puntosEquipoB = 0
+}

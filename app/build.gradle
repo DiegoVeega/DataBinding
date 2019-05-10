@@ -28,6 +28,8 @@ android {
 }
 
 dependencies {
+    def lifecycle_version = "2.0.0"
+
     implementation fileTree(dir: 'libs', include: ['*.jar'])
     implementation"org.jetbrains.kotlin:kotlin-stdlib-jdk7:$kotlin_version"
     implementation 'androidx.appcompat:appcompat:1.0.2'
@@ -38,4 +40,5 @@ dependencies {
     androidTestImplementation 'androidx.test.espresso:espresso-core:3.1.1'
     //Version de compilador
     kapt 'com.android.databinding:compiler:5.1.1'
+    implementation "androidx.lifecycle:lifecycle-extensions:$lifecycle_version"
 }
